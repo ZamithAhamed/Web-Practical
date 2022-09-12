@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Celsius to Fahrenheit</title>
+	<script type="text/javascript">
+		function convert(){
+
+			var cel=document.getElementById('val').value;
+			if(cel != ""){
+				var fer = (cel*9/5)+32;
+				document.getElementById("result").innerHTML = "Fahrenheit: "+fer;
+
+			}else{
+				alert("Enter the value");
+			}
+		}
+
+		function calculate(){
+			var val1 = document.getElementById('val1').value;
+			var val2 = document.getElementById('val2').value;
+			if(val2!="" && val1!=""){
+				var mul = val1*val2;
+				document.getElementById("multiplication").innerHTML = "Multiplication is "+mul;
+			
+				if(val2==0){
+					document.getElementById("division").innerHTML = "Division is infinity";
+				}else{
+					var divi = val1/val2;
+					document.getElementById("division").innerHTML = "Division is "+divi;
+				}
+
+
+			}else{
+				alert("values cannot be empty");
+			}
+
+
+
+		}
+	</script>
+</head>
+<body>
+		<h2>Find the Fahrenheit</h2>
+		<table>
+			<tr>
+				<td>Enter the Celsius</td>
+				<td><input type="number" id="val" placeholder="Celsius"></td>
+				<td id ="result" style="color: red;"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td style="text-align: right;"><button id="convert" onclick="convert()">Convert</button></td>
+			</tr>
+		</table>
+
+
+
+		<h2> Multiply and divide</h2>
+		<table>
+			<tr>
+				<td>Enter the first value</td>
+				<td><input type="number" id="val1" placeholder="First Value"></td>
+			</tr>
+			<tr>
+				<td>Enter the second value</td>
+				<td><input type="number" id="val2" placeholder="Second Value"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td style="text-align: right;"><button id="CAL" onclick="calculate()">Calculate</button></td>
+			</tr>
+			<tr><td id="multiplication" colspan="2"></td></tr>
+			<tr><td id="division" colspan="2"></td></tr>
+		</table>
+
+</body>
+</html>
