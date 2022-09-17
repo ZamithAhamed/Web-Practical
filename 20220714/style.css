@@ -1,0 +1,49 @@
+		h1{
+			text-align: center;
+			font-size: 50px;
+			color: white;
+			font-family: Garamond, serif;
+			font-style: normal;
+			font-weight: bold;
+		}
+		label{
+			color: floralwhite;
+			font-family:Times New Roman ;
+			font-weight: bold;
+			font-size:30px;
+			font-style: italic;
+		}
+		input[type=text],[type=password],[type=email][type=radio][type=file]{
+			width: 335px;
+			font-size: 20px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+			margin-left: 15px;
+			padding: 5px;
+			color: black;
+			background-color: lightgreen;
+			box-sizing: border-box;
+			border: inset;
+		}
+		select{
+			font-size: 20px;
+			width: 335px;
+			height: 35px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+			margin-left: 15px;
+			background-color: lightgreen;
+			box-sizing: border-box;
+			border: inset;
+		}
+		button{
+			font-size: 20px;
+			border-width: 4px;
+			background-color: floralwhite;
+			font-weight: bold;
+			width: 100px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+			margin-left: 15px;
+			padding: 5px;
+		}
