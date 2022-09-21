@@ -30,10 +30,17 @@ elseif (!str_contains($id, "IM/2019/"))
 		$rows = mysqli_num_rows($result);
 
 		if($rows > 0){
-		    echo "Print Id";
+		    echo "Print Id<br><br>";
+		    echo "******Student ID******<br><br>";
+		    echo "ID No: $id<br>";
+		    echo "Name: $name<br>";
+		    echo "Age: $age<br>";
+
+    		echo '<script> alert("Print ID") </script>';
 		}
 		else{
 		    echo "Not Found";
+    		echo '<script> alert("ID not Found") </script>';
 		}  
 
 
