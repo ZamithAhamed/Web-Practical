@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Practical 9 Q3</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("h1").prop('class', 'sty2')
+			})
+
+		});
+	</script>
+	<style type="text/css">
+		.sty1{
+			 font-size: 40px;
+			  font-weight: 600;
+			  background-image: linear-gradient(to left, #553c9a, #b393d3);
+			  color: transparent;
+			  background-clip: text;
+			  -webkit-background-clip: text;
+		}
+
+		.sty2{
+			font-family: "Trebuchet MS", sans-serif;
+			  font-size: 5em;
+			  letter-spacing: -2px;
+			  border-bottom: 2px solid black;
+			  text-transform: uppercase;	 
+		}
+
+	</style>
+</head>
+<body>
+	<h1 class="sty1">Welcome</h1>
+	<button><label id="btn">Change Style</label></button>
+</body>
+</html>

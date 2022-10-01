@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Practical 9 Q2</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#name").focus(function(){
+				$("#name").css("background-color", "#00FFFF")
+			})
+
+			$("#name").blur(function(){
+				$("#name").css("background-color", "white")
+			})
+
+			$("#age").click(function(){
+				$("#age").css("background-color", "#00FFFF")
+			})
+
+			$("#age").blur(function(){
+				$("#age").css("background-color", "white")
+			})
+
+			$("#email").click(function(){
+				$("#email").css("background-color", "#00FFFF")
+			})
+
+			$("#email").blur(function(){
+				$("#email").css("background-color", "white")
+			})
+
+		});
+	</script>
+</head>
+<body>
+	<table>
+	<tr>
+	<td><label>Name: </label><td><input type="text" id="name"></td>
+	</tr>
+	<tr>
+	<td><label>Age: </label></td><td><input type="text" id="age"></td>
+	</tr>
+	<tr>
+	<td><label>Email: </label></td><td><input type="text" id="email"></td>
+	</tr>
+</body>
+</html>
